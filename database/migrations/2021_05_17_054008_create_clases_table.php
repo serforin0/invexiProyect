@@ -15,14 +15,20 @@ class CreateClasesTable extends Migration
     {
         Schema::create('clases', function (Blueprint $table) {
             $table->id();
-            // $table->foreign('Materia_id')->references('id')->on('Materia')->onDelete('cascade');
-            // $table->foreign('idprofesor')->references('id')->on('Profesor')->onDelete('cascade');
-            // $table->foreign('idperido')->references('id')->on('Perido')->onDelete('cascade');
+            $table->unsignedBigInteger('materia_id');
+            $table->unsignedBigInteger('perido_id');
+            $table->unsignedBigInteger('profesor_id');
             $table->integer('capasidad')->unsigned();
-
             $table->timestamps();
+
+            $table->foreign('materia_id')->references('id')->on('materias');
+            $table->foreign('perido_id')->references('id')->on('peridos');
+            $table->foreign('profesor_id')->references('id')->on('profesors');
         });
     }
+
+
+
 
     /**
      * Reverse the migrations.

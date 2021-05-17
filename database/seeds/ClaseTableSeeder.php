@@ -17,28 +17,28 @@ class ClaseTableSeeder extends Seeder
 
 
 
-        // Clase::create([
+        Clase::create([
 
-        //     'Materia_id' => 1,
-        //     'idprofesor' => 1,
-        //     'capasidad' =>  30,
-        //     'idperido' => 1
-        // ]);
+            'Materia_id' => 1,
+            'idprofesor' => 1,
+            'capasidad' =>  30,
+            'idperido' => 1
+        ]);
 
-        // Clase::create([
+        Clase::create([
 
-        //     'Materia_id' => 2,
-        //     'idprofesor' => 2,
-        //     'capasidad' =>  30,
-        //     'idperido' => 2
-        // ]);
+            'Materia_id' => 2,
+            'idprofesor' => 2,
+            'capasidad' =>  30,
+            'idperido' => 2
+        ]);
 
-        // Clase::create([
+        Clase::create([
 
-        //     'Materia_id' => 3,
-        //     'idprofesor' => 3,
-        //     'capasidad' =>  30,
-        //     'idperido' => 3
-        // ]);
+            'Materia_id' => 3,
+            'idprofesor' => 3,
+            'capasidad' =>  30,
+            'idperido' => 3
+        ]);
     }
 }

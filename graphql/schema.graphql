@@ -18,6 +18,15 @@ type Mutation {
         apellido2: String @rules(apply: ["required"])
         fechaNacimiento: String @rules(apply: ["required"])
     ): Alumnos @create(model: "App\\Alumnos")
+    updateAlumno(
+        id: ID @rules(apply: ["required"])
+        nombre: String
+        apellido1: String
+        apellido2: String
+        fechaNacimiento: String
+    ): Alumnos @update(model: "App\\Alumnos")
+    deleteAlumno(id: ID @rules(apply: ["required"])): Alumnos
+        @delete(model: "App\\Alumnos")
 }
 
 type User {
