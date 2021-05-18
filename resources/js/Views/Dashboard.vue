@@ -4,8 +4,8 @@
 <script>
 import  axios from 'axios';
 
-export defaul{
-    data(){
+export default {
+    data() {
         return {
             alumnos: []
         }
