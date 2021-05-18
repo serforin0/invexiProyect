@@ -103,6 +103,7 @@ return [
         'default' => [
             'query' => [
                 // ExampleQuery::class,
+                'alumnos' => \App\GraphQL\Queries\AlumnosQuery::class
             ],
             'mutation' => [
                 // ExampleMutation::class,

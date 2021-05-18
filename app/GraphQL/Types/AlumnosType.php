@@ -4,7 +4,7 @@ namespace App\GraphQL\Types;
 
 use App\Alumnos;
 use GraphQL\Type\Definition\Type;
-use GraphQL\Support\Type as GraphQLType;
+use Rebing\GraphQL\Support\Type as GraphQLType;
 
 
 class AlumnosType extends GraphQLType
@@ -41,7 +41,8 @@ class AlumnosType extends GraphQLType
                 'type' => Type::nonNull(Type::string()),
                 'description' => 'fecha de nacimiento del alumno'
             ]
-        ]
+        ];
+        }
     }
 
-}
+
